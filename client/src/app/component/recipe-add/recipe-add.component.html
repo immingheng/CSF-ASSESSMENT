@@ -1,1 +1,53 @@
-<p>recipe-add works!</p>
+<!-- Task 6 Form displayed upon "Add" button in View 1 is clicked -->
+
+<form [formGroup]="form" (ngSubmit)="addRecipe()">
+
+  <!-- Title -->
+  <div>
+    <label class="form-label" for="title">Title: &nbsp;</label>
+    <input class="form-control" id="title" type="text" formControlName="title" required>
+  </div>
+  <br>
+
+  <!-- Ingredients FormArray -->
+  <div class="d-flex justify-content-between">
+    <label class="form-label" for="Ingredients" formArrayName="ingredients">Ingredients &nbsp;</label>
+    <button class="btn btn-primary" type="button" (click)="addIngredient()">+</button>
+  </div>
+
+  <br>
+
+  <div formArrayName="ingredients">
+    <div class="d-flex justify-content-between" *ngFor="let ingredient of formArray.controls; let j = index"
+      [formGroup]="ingredient">
+      <input class=" form-control" id="title" type="text" required placeholder="Add ingredient"
+        formControlName="ingredient"> &nbsp;
+      <button class="btn btn-danger" type="button" (click)="deleteIngredient(j)">X</button>
+    </div>
+
+  </div>
+
+  <br>
+
+  <!-- Instruction -->
+  <div>
+    <label class="form-label" for="instruction">Instruction</label>
+    <br>
+    <textarea class="form-control" formControlName="instruction" rows="4"></textarea>
+  </div>
+  <br>
+
+  <!-- Image -->
+  <div>
+    <label for="image">Image</label>
+    <input class="form-control" type="text" id="image" formControlName="image">
+  </div>
+
+  <!-- buttons -->
+  <br>
+  <div class="d-flex justify-content-evenly">
+    <button class="btn btn-primary" type="button" [routerLink]="['/']">Back</button>
+    <button class="btn btn-secondary" type="submit" [disabled]="this.form.invalid">Add</button>
+  </div>
+
+</form>

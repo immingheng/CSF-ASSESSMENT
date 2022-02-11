@@ -1,17 +1,20 @@
-<h1>{{recipe?.name}}</h1>
+<div class>
 
-<img src={{recipe?.image}} alt={{recipe?.name}}>
+  <h1>{{recipe?.name}}</h1>
 
-<h2>Ingredients</h2>
-<ol *ngFor="let ingredient of recipe?.ingredients">
-  <li>{{ingredient}}</li>
-</ol>
+  <img src={{recipe?.image}} alt={{recipe?.name}} height="300em">
 
-<h2>Instruction</h2>
-<p>{{recipe?.instruction}}</p>
+  <h2>Ingredients</h2>
+  <ol>
+    <li *ngFor="let ingredient of recipe?.ingredients">{{ingredient}}</li>
+  </ol>
+
+  <h2>Instruction</h2>
+  <p>{{recipe?.instruction}}</p>
 
 
-<br>
-<div class="d-flex justify-content-end">
-  <button class="btn btn-primary" type="button" [routerLink]="['/']">Back</button>
+  <br>
+  <div class="d-flex justify-content-end">
+    <button class="btn btn-primary" type="button" [routerLink]="['/']">Back</button>
+  </div>
 </div>

@@ -23,7 +23,9 @@ export class RecipeService{
     // Method returns specified recipe given by the recipeId parameter, it is retrieved from the backend !
     // Note that as recipeId is a dynamic route parameter, it has to be obtained using ActivatedRoute accordingly!
     return lastValueFrom(this.http.get<Recipe>(`/api/recipe/${recipeId}`))
-
   }
+
+
+
 
 }

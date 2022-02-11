@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { Recipes } from 'src/app/models/recipes.model';
+import { RecipeService } from 'src/app/recipe.service';
 
 @Component({
   selector: 'app-recipe-list',
@@ -7,9 +9,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class RecipeListComponent implements OnInit {
 
-  constructor() { }
+  recipes!:Recipes[];
+
+  constructor(private recipeSvc: RecipeService) { }
 
   ngOnInit(): void {
+    // On initialisation, recipes should be populated by a GET response from the database (Springboot) to obtain the Recipe[] to populate the list in the homepage.
+    this.recipeSvc.getAllRecipes().then(resolve=>{this.recipes=resolve})
+
   }
 
 }

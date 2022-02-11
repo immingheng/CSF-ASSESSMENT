@@ -1,1 +1,10 @@
-<p>recipe-list works!</p>
+<!-- View 1 -->
+
+<ul class="list-group">
+  <li *ngFor="let recipe of recipes" class="list-group-item" [routerLink]="['recipe',recipe.recipeId]">{{recipe.name}}
+  </li>
+</ul>
+<br>
+<div class="d-flex justify-content-end">
+  <button class="btn btn-primary" type="button" [routerLink]="['/add']">Add</button>
+</div>

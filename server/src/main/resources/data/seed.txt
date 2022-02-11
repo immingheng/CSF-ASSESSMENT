@@ -1,0 +1,32 @@
+id: 1234abcd
+title: Bread
+image: https://images.immediate.co.uk/production/volatile/sites/30/2020/08/easy-bread-7455dce.jpg?quality=90&webp=true&resize=300,272
+ingredient: 500g strong white flour, plus extra for dusting
+ingredient: 2 tsp salt
+ingredient: 7g sachet fast-action yeast
+ingredient: 3 tbsp olive oil
+ingredient: 300ml water
+instruction: Mix 500g strong white flour, 2 tsp salt and a 7g sachet of fast-action yeast in a large bowl.
+instruction: Make a well in the centre, then add 3 tbsp olive oil and 300ml water, and mix well. If the dough seems a little stiff, add another 1-2 tbsp water and mix well.
+instruction: Tip onto a lightly floured work surface and knead for around 10 mins.
+instruction: Once the dough is satin-smooth, place it in a lightly oiled bowl and cover with cling film. Leave to rise for 1 hour until doubled in size or place in the fridge overnight.
+instruction: Line a baking tray with baking parchment. Knock back the dough (punch the air out and pull the dough in on itself) then gently mould the dough into a ball.
+instruction: Place it on the baking parchment to prove for a further hour until doubled in size.
+instruction: Heat oven to 220C/fan 200C/gas 7.
+instruction: Dust the loaf with some extra flour and cut a cross about 6cm long into the top of the loaf with a sharp knife.
+instruction: Bake for 25-30 mins until golden brown and the loaf sounds hollow when tapped underneath. Cool on a wire rack.
+
+id: beefbeef
+title: Roast Beef
+image: https://hips.hearstapps.com/hmg-prod/images/delish-roast-beef-horizontal-1540505165.jpg
+ingredient: 1 (4-lb.) round roast
+ingredient: 1/4 c. extra-virgin olive oil
+ingredient: 3 cloves garlic, minced
+ingredient: 1 tbsp. chopped fresh rosemary 
+ingredient: 1 tbsp. chopped fresh thyme leaves
+ingredient: 2 tsp. kosher salt
+ingredient: 1 tsp. freshly ground black pepper
+instruction: Recommended: let roast sit uncovered on a wire rack set in a baking sheet in the refrigerator 1 hour, up to overnight. Remove from refrigerator and allow meat to come up to room temperature, 1 to 1 1/2 hours.
+instruction: Preheat oven to 450°. In a small bowl, combine oil, garlic, rosemary, thyme, salt, and pepper. Rub all over roast.
+instruction: Place roast in roasting pan fitted with a roasting rack. Roast for 15 minutes, then reduce heat to 325° and roast 1 hours 45 minutes more for medium, or 2 hours for medium well done.
+instruction: Remove from oven and let rest 15 to 30 minutes before serving.
